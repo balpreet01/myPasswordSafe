@@ -3,12 +3,12 @@ import random #random module
 s = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?" #random string to get characters from
 
 def passwdGen(passLength): #defining function 
-    autoGenPass =  "".join(random.autoGenPass(s,passlen )) #generating the passsword
+    autoGenPass = "".join(random.sample(s, passlen )) #generating the passsword
     return autoGenPass
 
-#print('How many characters password do you want? max:' +str(len(s))) # getting the length of password user wants 
-#passlen = int(input()) #assigning the length to avariable
-#print(passwdGen(passlen))
+print('How many characters password do you want? max:' +str(len(s))) # getting the length of password user wants 
+passlen = int(input()) #assigning the length to avariable
+print(passwdGen(passlen))
 
 userPasswd = []
 def userPassGen():
