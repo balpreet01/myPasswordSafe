@@ -5,7 +5,7 @@ import mysql.connector #mysql connector
 s = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?" #random string to get characters from
 
 def passwdGen(passLength): #defining function 
-    autoGenPass = "".join(random.sample(s, passlen )) #generating the passsword
+    autoGenPass = "".join(random.sample(s, passLength )) #generating the passsword
     return autoGenPass
 
 #print('How many characters password do you want? max:' +str(len(s))) # getting the length of password user wants 
